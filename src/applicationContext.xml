@@ -10,6 +10,7 @@
 <bean id="myFortune" class="com.sooriya.HappyFortuneService" init-method="sampleinitmethod"
 destroy-method="sampledestroymethod">
 </bean>
+<!-- configuring init and destroy method -->
 <bean id="myCoach" class="com.sooriya.BaseballCoach" init-method="settingInitMethod"
    destroy-method="settingDestroyMethod">
    <property name="fortuneService" ref="myFortune"/>
